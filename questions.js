@@ -1,19 +1,25 @@
 // Créer un tableau "languages" contenant "Html", "CSS", "Java", "PHP"
 // L'objet global Array est utilisé pour créer des tableaux.
 var languagesArrayCreation = function () {
-var formLanguage = Array('Html', 'CSS', 'Java', 'PHP');
-  return formLanguage;
+// var formLanguage = Array('Html', 'CSS', 'Java', 'PHP'); possible aussi
+//   return formLanguage;
+
+  var formLanguage = ['Html', 'CSS', 'Java', 'PHP'];
+    return formLanguage;
 }
 
 // Créer un tableau "numbers" contenant les numbers de 0 à 5
 var numbersArrayCreation = function () {
-  var formNumbers = Array(0, 1, 2, 3, 4, 5);
+  // var formNumbers = Array(0, 1, 2, 3, 4, 5); possible aussi
+  //   return formNumbers;
+
+  var formNumbers = [0, 1, 2, 3, 4, 5];
     return formNumbers;
 }
 
 //  Remplacer le troisième élément du tableau par "Javascript"
 var ElementReplacement = function (languages) {
-  // return languages.splice(2, 1, 'Javascript');
+  // return languages.splice(2, 1, 'Javascript'); possible aussi
   languages[2] = 'Javascript';
   return languages;
 }
@@ -59,13 +65,11 @@ var arrayToString = function (languages) {
  // Trier le tableau "socialMedia"
  // La méthode sort() trie les éléments d'un tableau, dans ce même tableau, et renvoie le tableau.
 var arraySort = function (socialMedia) {
-socialMedia.sort();
-  return socialMedia;
+  return socialMedia.sort();
 }
 
 // Bonus : Inverser le tableau "languages"
 // La méthode reverse() transpose les éléments d'un tableau : le premier élément devient le dernier et le dernier devient le premier et ainsi de suite.
 var arrayInvert = function (languages){
-languages.reverse();
-  return languages;
+  return languages.reverse();
 }
